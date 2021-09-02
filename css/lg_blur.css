@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+    float: left;
+}
+.lg_nav{ /*导航栏*/
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    top: 0;
+    background: rgba(0, 0, 0, 0.4);
+    /*background: rgba(255, 255, 255, 0.4);*/
+    z-index: 99; /*设置权重*/
+}
+.lg_blur_nav{ /*模糊导航栏容器*/
+    position: fixed;
+    width: 100%;
+    overflow: hidden; /*溢出隐藏*/
+    z-index: 98;
+}
+.lg_blur_container{ /*模糊内容*/
+    filter:blur(10px);
+    /*-webkit-filter:blur(5px);!*Chrome, Safari, Opera*!*/
+}
